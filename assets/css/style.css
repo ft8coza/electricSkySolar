@@ -1246,14 +1246,14 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info-box {
+.contacts .info-box {
   color: #444444;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
 }
 
-.contact .info-box i {
+.contacts .info-box i {
   font-size: 32px;
   color: #fd7310;
   border-radius: 50%;
@@ -1261,26 +1261,26 @@ section {
   border: 2px dotted #f5a0a0;
 }
 
-.contact .info-box h3 {
+.contacts .info-box h3 {
   font-size: 20px;
   color: #777777;
   font-weight: 700;
   margin: 10px 0;
 }
 
-.contact .info-box p {
+.contacts .info-box p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.contact .contact-form {
+.contacts .contact-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
 }
 
-.contact .contact-form .error-message {
+.contacts .contact-form .error-message {
   display: none;
   color: #fff;
   background: #fd7310;
@@ -1289,11 +1289,11 @@ section {
   font-weight: 600;
 }
 
-.contact .contact-form .error-message br + br {
+.contacts .contact-form .error-message br + br {
   margin-top: 25px;
 }
 
-.contact .contact-form .sent-message {
+.contacts .contact-form .sent-message {
   display: none;
   color: #fff;
   background: #02b0f0;
@@ -1302,14 +1302,14 @@ section {
   font-weight: 600;
 }
 
-.contact .contact-form .loading {
+.contacts .contact-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .contact-form .loading:before {
+.contacts .contact-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1321,27 +1321,27 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .contact-form input,
-.contact .contact-form textarea {
+.contacts .contact-form input,
+.contacts .contact-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .contact-form input::focus,
-.contact .contact-form textarea::focus {
+.contacts .contact-form input::focus,
+.contacts .contact-form textarea::focus {
   background-color: #fd7310;
 }
 
-.contact .contact-form input {
+.contacts .contact-form input {
   padding: 10px 15px;
 }
 
-.contact .contact-form textarea {
+.contacts .contact-form textarea {
   padding: 12px 15px;
 }
 
-.contact .contact-form .btn {
+.contacts .contact-form .btn {
   background: #fd7310;
   border: 0;
   padding: 10px 24px;
@@ -1349,7 +1349,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .contact-form .btn:hover {
+.contacts .contact-form .btn:hover {
   background: #fd7310;
 }
 

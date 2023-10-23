@@ -45,7 +45,7 @@
     window.onload = function () {
       document
         .getElementById("contact-form")
-        .addEventListener("submit_form", function (event) {
+        .addEventListener("submit", function (event) {
           event.preventDefault();
           // these IDs from the previous steps
           emailjs.sendForm("smtp_service", "template_vzh49he", this).then(
@@ -117,7 +117,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contactform">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -638,7 +638,7 @@
     <!--End Team Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contactform" class="contacts">
       <div class="container">
         <div class="section-title">
           <span>Contact</span>
@@ -704,7 +704,7 @@
                 
               </div>
               <div class="text-center">
-                <button class="btns" type="submit_form">Contact Us</button>
+                <button class="btns" type="submit">Contact Us</button>
               </div>
             </form>
           </div>
