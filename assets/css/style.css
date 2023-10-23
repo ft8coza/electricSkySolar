@@ -1275,12 +1275,12 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form .contact-form {
+.contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
 }
 
-.contact .php-email-form .contact-form .error-message {
+.contact .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #fd7310;
@@ -1289,11 +1289,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .contact-form .error-message br + br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .contact-form .sent-message {
+.contact .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #02b0f0;
@@ -1302,14 +1302,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .contact-form .loading {
+.contact .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .contact-form .loading:before {
+.contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1321,27 +1321,27 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form .contact-form input,
-.contact .php-email-form  .contact-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form .contact-form input::focus,
-.contact .php-email-form .contact-form textarea::focus {
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
   background-color: #fd7310;
 }
 
-.contact .php-email-form .contact-form input {
+.contact .php-email-form input {
   padding: 10px 15px;
 }
 
-.contact .php-email-form .contact-form textarea {
+.contact .php-email-form textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form .contact-form button[type="contact-send"] {
+.contact .php-email-form button[type="submit"] {
   background: #fd7310;
   border: 0;
   padding: 10px 24px;
@@ -1349,7 +1349,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form .contact-form button[type="contact-send"]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #fd7310;
 }
 
