@@ -1,129 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Solar Installation ElectricSky Solar</title>
-    <meta
-      content="ElectricSky Solar: South African sustainable energy solutions provider. Expert in solar and renewable energy systems for homes, businesses, and organizations in South Africa."
-      name="description"
-    />
-    <meta
-      content="ElectricSky Solar, ElectricSky Solar Cape Town, South African owned, Solar and renewable energy, Sustainable energy solutions, Load Shedding, Load Shedding Solutions, Tailored energy systems, Energy requirements, Seasoned professionals, Trusted solar equipment providers, Solar solutions, Residence, Cape Town , Solar Cape Town, Solar Helderberg, Solar Company, Solar Organization, Knowledge and expertise, Sustainable energy partner, Cleaner future, Africa, Solar Helderberg, Solar Somerset West, Solar Strand"
-      name="keywords"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link href="assets/img/ElecCrop.png" rel="icon" />
-    <link href="assets/img/ElecCrop.png" rel="apple-touch-icon" />
+  <title>Solar Installation ElectricSky Solar</title>
+  <meta
+    content="ElectricSky Solar: South African sustainable energy solutions provider. Expert in solar and renewable energy systems for homes, businesses, and organizations in South Africa."
+    name="description" />
+  <meta
+    content="ElectricSky Solar, ElectricSky Solar Cape Town, South African owned, Solar and renewable energy, Sustainable energy solutions, Load Shedding, Load Shedding Solutions, Tailored energy systems, Energy requirements, Seasoned professionals, Trusted solar equipment providers, Solar solutions, Residence, Cape Town , Solar Cape Town, Solar Helderberg, Solar Company, Solar Organization, Knowledge and expertise, Sustainable energy partner, Cleaner future, Africa, Solar Helderberg, Solar Somerset West, Solar Strand"
+    name="keywords" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="assets/img/ElecCrop.png" rel="icon" />
+  <link href="assets/img/ElecCrop.png" rel="apple-touch-icon" />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!--emailjs se scripts-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init("3eicGD17foFksIBQ6");
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contact-form")
-          .addEventListener("contact-send", function (event) {
-            event.preventDefault();
-            // these IDs from the previous steps
-            emailjs.sendForm("smtp_service", "template_vzh49he", this).then(
-              function () {
-                console.log("SUCCESS!");
-                alert("Your mail is sent!");
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-                location.reload();
-              },
-              function (error) {
-                console.log("FAILED...", error);
-                alert("Your mail is not sent!");
-              }
-            );
-          });
-      };
-    </script>
-  </head>
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!--emailjs se scripts-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init("3eicGD17foFksIBQ6");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit_form", function (event) {
+          event.preventDefault();
+          // these IDs from the previous steps
+          emailjs.sendForm("smtp_service", "template_vzh49he", this).then(
+            function () {
+              console.log("SUCCESS!");
+              alert("Your mail is sent!");
 
-  <body>
-    <!-- ======= Top Bar ======= -->
-    <section id="topbar" class="d-flex align-items-center">
-      <div
-        class="container d-flex justify-content-center justify-content-md-between"
-      >
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope-fill"></i
-          ><a href="mailto:info@electricskysolar.co.za"
-            >info@electricskysolar.co.za</a
-          >
-          <i class="bi bi-phone-fill phone-icon"></i
-          ><a href="tel:0814110824"> 081 411 0824</a>
-        </div>
-        <div class="social-links d-none d-md-block">
-          <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
-          <a
-            href="https://web.facebook.com/profile.php?id=100090957391377"
-            target="_blank"
-            class="facebook"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <!--<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>-->
-        </div>
+              location.reload();
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              alert("Your mail is not sent!");
+            }
+          );
+        });
+    };
+  </script>
+</head>
+
+<body>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:info@electricskysolar.co.za">info@electricskysolar.co.za</a>
+        <i class="bi bi-phone-fill phone-icon"></i><a href="tel:0814110824"> 081 411 0824</a>
       </div>
-    </section>
+      <div class="social-links d-none d-md-block">
+        <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
+        <a href="https://web.facebook.com/profile.php?id=100090957391377" target="_blank" class="facebook"><i
+            class="bi bi-facebook"></i></a>
+        <!--<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>-->
+      </div>
+    </div>
+  </section>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-        <h1 class="logo"><a href="index.html">ElectricSky Solar</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">ElectricSky Solar</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li>
-              <a class="nav-link scrollto " href="#portfolio">Portfolio</a>
-            </li>
-            <!--<li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>-->
-            <!--<li><a class="nav-link scrollto" href="#team">Team</a></li>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li>
+            <a class="nav-link scrollto " href="#portfolio">Portfolio</a>
+          </li>
+          <!--<li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>-->
+          <!--<li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -141,885 +117,709 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
-      </div>
-    </header>
-    <!-- End Header -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-      <div
-        class="container position-relative"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <h1>Renewable Energy | Backup Power | Energy Storage</h1>
-        <h2>Empowering a Sustainable Tomorrow</h2>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <h1>Renewable Energy | Backup Power | Energy Storage</h1>
+      <h2>Empowering a Sustainable Tomorrow</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <div class="shadow-lg p-1 mb-2 rounded">
+              <img src="assets/img/About.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>About Us</h3>
+            <p>
+              ElectricSky Solar takes pride in being a South African owned
+              company dedicated to the advancement of the solar and renewable
+              energy sector. With our extensive experience, we have cultivated
+              an in-depth understanding of the distinctive challenges and
+              prospects inherent in delivering sustainable energy solutions
+              within South Africa.
+            </p>
+            <p>
+              Collaborating closely with our clients, we craft and implement
+              tailored systems that precisely align with their unique energy
+              requirements and financial constraints. Our team of seasoned
+              professionals is unwavering in their commitment to delivering
+              top-tier service, and we source our products exclusively from
+              the most trusted and esteemed solar equipment providers.
+            </p>
+            <p>
+              Whether you seek a solar solution for your residence, company,
+              or organization, rest assured that our knowledge and expertise
+              will ensure a successful outcome. At ElectricSky Solar, we are
+              more than a solar company; we are a sustainable energy partner
+              committed to driving a brighter, cleaner future for Africa.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End About Section -->
 
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-              <div class="shadow-lg p-1 mb-2 rounded">
-                <img src="assets/img/About.jpg" class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div
-              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
-              data-aos="fade-right"
-            >
-              <h3>About Us</h3>
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <p><strong>Here's what sets us apart:</strong></p>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="box">
+              <span>01</span>
+              <h4>Local Expertise, Global Vision</h4>
               <p>
-                ElectricSky Solar takes pride in being a South African owned
-                company dedicated to the advancement of the solar and renewable
-                energy sector. With our extensive experience, we have cultivated
-                an in-depth understanding of the distinctive challenges and
-                prospects inherent in delivering sustainable energy solutions
-                within South Africa.
-              </p>
-              <p>
-                Collaborating closely with our clients, we craft and implement
-                tailored systems that precisely align with their unique energy
-                requirements and financial constraints. Our team of seasoned
-                professionals is unwavering in their commitment to delivering
-                top-tier service, and we source our products exclusively from
-                the most trusted and esteemed solar equipment providers.
-              </p>
-              <p>
-                Whether you seek a solar solution for your residence, company,
-                or organization, rest assured that our knowledge and expertise
-                will ensure a successful outcome. At ElectricSky Solar, we are
-                more than a solar company; we are a sustainable energy partner
-                committed to driving a brighter, cleaner future for Africa.
+                With deep roots in South Africa, we possess an unparalleled
+                understanding of the local energy landscape. Our global
+                outlook allows us to bring innovative solutions to the
+                forefront.
               </p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- End About Section -->
 
-      <!-- ======= Why Us Section ======= -->
-      <section id="why-us" class="why-us">
-        <div class="container">
-          <p><strong>Here's what sets us apart:</strong></p>
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-up">
-              <div class="box">
-                <span>01</span>
-                <h4>Local Expertise, Global Vision</h4>
-                <p>
-                  With deep roots in South Africa, we possess an unparalleled
-                  understanding of the local energy landscape. Our global
-                  outlook allows us to bring innovative solutions to the
-                  forefront.
-                </p>
-              </div>
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="box">
+              <span>02</span>
+              <h4>Tailored Solutions</h4>
+              <p>
+                We don't believe in one-size-fits-all. Our team collaborates
+                closely with clients to design bespoke energy systems that
+                meet their unique needs and budgets.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="col-lg-4 mt-4 mt-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="150"
-            >
-              <div class="box">
-                <span>02</span>
-                <h4>Tailored Solutions</h4>
-                <p>
-                  We don't believe in one-size-fits-all. Our team collaborates
-                  closely with clients to design bespoke energy systems that
-                  meet their unique needs and budgets.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 mt-4 mt-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="box">
-                <span>03</span>
-                <h4>Quality Assurance</h4>
-                <p>
-                  We source products only from the most trusted and reputable
-                  solar equipment suppliers, ensuring our clients receive
-                  top-quality components that stand the test of time.
-                </p>
-              </div>
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <span>03</span>
+              <h4>Quality Assurance</h4>
+              <p>
+                We source products only from the most trusted and reputable
+                solar equipment suppliers, ensuring our clients receive
+                top-quality components that stand the test of time.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Why Us Section -->
+      </div>
+    </section>
+    <!-- End Why Us Section -->
 
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container">
-          <div class="section-title">
-            <span>Services</span>
-            <h2>Services</h2>
-            <p>Fueling Tomorrow with Sustainable Energy Solutions</p>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <span>Services</span>
+          <h2>Services</h2>
+          <p>Fueling Tomorrow with Sustainable Energy Solutions</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-house-fill"></i></div>
+              <h4>
+                <a href="#contact">Revolutionize Your Home's Energy or Residential</a>
+              </h4>
+              <p>
+                Discover tailored renewable energy solutions for your
+                residence. Our expert team specializes in personalized solar
+                power and battery storage systems, empowering you to achieve
+                energy independence and substantial savings starting now.
+              </p>
+            </div>
           </div>
 
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="fade-up"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-house-fill"></i></div>
-                <h4>
-                  <a href="#contact"
-                    >Revolutionize Your Home's Energy or Residential</a
-                  >
-                </h4>
-                <p>
-                  Discover tailored renewable energy solutions for your
-                  residence. Our expert team specializes in personalized solar
-                  power and battery storage systems, empowering you to achieve
-                  energy independence and substantial savings starting now.
-                </p>
-              </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+            data-aos-delay="150">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-building-fill"></i></div>
+              <h4>
+                <a href="#contact">Elevate Your Business Sustainably or Commercial &
+                  Industrial</a>
+              </h4>
+              <p>
+                Unlock the potential of your commercial or industrial venture
+                with our specialized renewable energy services. From inception
+                to upkeep, we provide customized solar and energy storage
+                solutions that empower your business to optimize savings and
+                sustainability.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-              data-aos="fade-up"
-              data-aos-delay="150"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-building-fill"></i></div>
-                <h4>
-                  <a href="#contact"
-                    >Elevate Your Business Sustainably or Commercial &
-                    Industrial</a
-                  >
-                </h4>
-                <p>
-                  Unlock the potential of your commercial or industrial venture
-                  with our specialized renewable energy services. From inception
-                  to upkeep, we provide customized solar and energy storage
-                  solutions that empower your business to optimize savings and
-                  sustainability.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-people-fill"></i></div>
-                <h4>
-                  <a href="#contact"
-                    >Unleash Renewable Energy Potential or Consulting</a
-                  >
-                </h4>
-                <p>
-                  Harness the full potential of renewable energy with our expert
-                  consultancy and advisory services. Our tailored solutions
-                  cover solar power, battery storage, and alternative energy,
-                  from feasibility assessments to regulatory compliance. Join us
-                  in shaping a greener future!
-                </p>
-              </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up"
+            data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-people-fill"></i></div>
+              <h4>
+                <a href="#contact">Unleash Renewable Energy Potential or Consulting</a>
+              </h4>
+              <p>
+                Harness the full potential of renewable energy with our expert
+                consultancy and advisory services. Our tailored solutions
+                cover solar power, battery storage, and alternative energy,
+                from feasibility assessments to regulatory compliance. Join us
+                in shaping a greener future!
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Services Section -->
+      </div>
+    </section>
+    <!-- End Services Section -->
 
-      <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
-        <div class="container" data-aos="zoom-in">
-          <div class="text-center">
-            <h3>Take Action Now</h3>
-            <p>
-              Don't wait! Seize the opportunity for sustainable energy solutions
-              that make a difference. Contact us today and let's transform your
-              energy future together.
-            </p>
-            <a class="cta-btn" href="#contact">Contact Us</a>
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Take Action Now</h3>
+          <p>
+            Don't wait! Seize the opportunity for sustainable energy solutions
+            that make a difference. Contact us today and let's transform your
+            energy future together.
+          </p>
+          <a class="cta-btn" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <span>Portfolio</span>
+          <h2>Portfolio</h2>
+          <p>
+            Explore our portfolio—a testament to our dedication to turning
+            concepts into compelling realities.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Residential</li>
+              <li data-filter=".filter-card">Commercial</li>
+            </ul>
           </div>
         </div>
-      </section>
-      <!-- End Cta Section -->
 
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio">
-        <div class="container">
-          <div class="section-title">
-            <span>Portfolio</span>
-            <h2>Portfolio</h2>
-            <p>
-              Explore our portfolio—a testament to our dedication to turning
-              concepts into compelling realities.
-            </p>
-          </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
+          <!--<div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>-->
 
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">Residential</li>
-                <li data-filter=".filter-card">Commercial</li>
-              </ul>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec1jpg.jpg" class="img-fluid" alt="" />
+
+              <div class="portfolio-info">
+                <!--<h4>Company name?</h4>-->
+                <p>Commercial</p>
+                <a href="assets/img/portfolio/Elec1jpg.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Commercial"><i class="bx bx-plus"></i></a>
+                <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
             </div>
           </div>
 
-          <div
-            class="row portfolio-container"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <!--<div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>-->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec1jpg.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-
-                <div class="portfolio-info">
-                  <!--<h4>Company name?</h4>-->
-                  <p>Commercial</p>
-                  <a
-                    href="assets/img/portfolio/Elec1jpg.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Commercial"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec2.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!--<h4>Web 3</h4>-->
+                <p>Commercial</p>
+                <a href="assets/img/portfolio/Elec2.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Commercial"><i class="bx bx-plus"></i></a>
+                <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!--<h4>Web 3</h4>-->
-                  <p>Commercial</p>
-                  <a
-                    href="assets/img/portfolio/Elec2.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Commercial"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec3.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!--<h4>App 2</h4>-->
+                <p>Commercial</p>
+                <a href="assets/img/portfolio/Elec3.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Commercial"><i class="bx bx-plus"></i></a>
+                <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!--<h4>App 2</h4>-->
-                  <p>Commercial</p>
-                  <a
-                    href="assets/img/portfolio/Elec3.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Commercial"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec4.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!--<h4>Card 2</h4>-->
+                <p>Residential</p>
+                <a href="assets/img/portfolio/Elec4.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Residential"><i class="bx bx-plus"></i></a>
+                <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!--<h4>Card 2</h4>-->
-                  <p>Residential</p>
-                  <a
-                    href="assets/img/portfolio/Elec4.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Residential"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec5jpg.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!--<h4>Web 2</h4>-->
+                <p>Commercial</p>
+                <a href="assets/img/portfolio/Elec5jpg.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Commercial"><i class="bx bx-plus"></i></a>
+                <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec5jpg.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!--<h4>Web 2</h4>-->
-                  <p>Commercial</p>
-                  <a
-                    href="assets/img/portfolio/Elec5jpg.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Commercial"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec6jpg.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!-- <h4>App 3</h4>-->
+                <p>Residential</p>
+                <a href="assets/img/portfolio/Elec6jpg.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Residential"><i class="bx bx-plus"></i></a>
+                <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec6jpg.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!-- <h4>App 3</h4>-->
-                  <p>Residential</p>
-                  <a
-                    href="assets/img/portfolio/Elec6jpg.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Residential"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec7.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!--<h4>Card 1</h4>-->
+                <p>Commercial</p>
+                <a href="assets/img/portfolio/Elec7.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Commercial"><i class="bx bx-plus"></i></a>
+                <!--<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec7.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!--<h4>Card 1</h4>-->
-                  <p>Commercial</p>
-                  <a
-                    href="assets/img/portfolio/Elec7.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Commercial"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec8.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!--<h4>Card 3</h4>-->
+                <p>Residential</p>
+                <a href="assets/img/portfolio/Elec8.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Residential"><i class="bx bx-plus"></i></a>
+                <!--<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec8.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!--<h4>Card 3</h4>-->
-                  <p>Residential</p>
-                  <a
-                    href="assets/img/portfolio/Elec8.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Residential"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="shadow-lg p-1 mb-3 bg-white rounded">
-                <img
-                  src="assets/img/portfolio/Elec9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <!--<h4>Web 3</h4>-->
-                  <p>Commercial</p>
-                  <a
-                    href="assets/img/portfolio/Elec9.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox preview-link"
-                    title="Commercial"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <!--<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="shadow-lg p-1 mb-3 bg-white rounded">
+              <img src="assets/img/portfolio/Elec9.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <!--<h4>Web 3</h4>-->
+                <p>Commercial</p>
+                <a href="assets/img/portfolio/Elec9.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link" title="Commercial"><i class="bx bx-plus"></i></a>
+                <!--<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Portfolio Section -->
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients">
-        <div class="container" data-aos="zoom-in">
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/suppliers/victron.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/suppliers/victron.png" class="img-fluid" alt="" />
+          </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/suppliers/freedom2.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/suppliers/freedom2.png" class="img-fluid" alt="" />
+          </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/suppliers/solarmd.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/suppliers/solarmd.png" class="img-fluid" alt="" />
+          </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/suppliers/solaredge.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/suppliers/solaredge.png" class="img-fluid" alt="" />
+          </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/suppliers/sun.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/suppliers/sun.png" class="img-fluid" alt="" />
+          </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="assets/img/suppliers/atess.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/suppliers/atess.png" class="img-fluid" alt="" />
           </div>
         </div>
-      </section>
-      <!--End Clients Section -->
+      </div>
+    </section>
+    <!--End Clients Section -->
 
-      <!-- Testimonials Section - Home Page -->
-      <section id="testimonials" class="testimonials">
-        <div class="container">
-          <div
-            class="col-lg-12 info section-title"
-            
-          >
-            <span>Testimonials</span>
-            <h2>Testimonials</h2>
-            <p>
-              Discover what our satisfied clients have to say about their
-              experiences working with us. Their words speak volumes about our
-              commitment to excellence.
-            </p>
-          </div>
-          <div class="swiper">
-            <template class="swiper-config">
-              { "loop": true, "speed" : 600, "autoplay": { "delay": 5000 },
-              "slidesPerView": "auto", "pagination": { "el":
-              ".swiper-pagination", "type": "bullets", "clickable": true } }
-            </template>
-          
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                
-                <div class="testimonial-item">
-                  <div class="d-flex">
-                    <img
-                      src="assets/img/Jo.jpeg"
-                      class="testimonial-img flex-shrink-0"
-                      alt=""
-                    />
-                    <div>
-                      <h3>Jo Thomson</h3>
+    <!-- Testimonials Section - Home Page -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="col-lg-12 info section-title">
+          <span>Testimonials</span>
+          <h2>Testimonials</h2>
+          <p>
+            Discover what our satisfied clients have to say about their
+            experiences working with us. Their words speak volumes about our
+            commitment to excellence.
+          </p>
+        </div>
+        <div class="swiper">
+          <template class="swiper-config">
+            { "loop": true, "speed" : 600, "autoplay": { "delay": 5000 },
+            "slidesPerView": "auto", "pagination": { "el":
+            ".swiper-pagination", "type": "bullets", "clickable": true } }
+          </template>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+              <div class="testimonial-item">
+                <div class="d-flex">
+                  <img src="assets/img/Jo.jpeg" class="testimonial-img flex-shrink-0" alt="" />
+                  <div>
+                    <h3>Jo Thomson</h3>
                     <h4>Home Owner</h4>
                     <div class="stars">
-                      <i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i
-                      ><i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div>
-                    </div>
-                    </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span
-                        >Christo and his team installed a solar system at my home in Cape Town three months ago. I can unreservably recommend his quality of work and the total dedication he put into delivering high-quality, safe, reliable solutions for my energy needs. He is a man of unquestionable integrity, and takes an intense pride in the quality of the work that he provides. 
-                        I would go to so far as to say he's a perfectionist - and that's exactly what you need when someone is working with the power in your home or business. 
-                        His team also showed huge commitment to delivering quality service and installing an effective and reliable system. Christo has been rapid in his follow-up to any queries that I've had, and went the extra mile in helping us to configure the system, even playing a role after the job was complete in assisting us to customise the solar settings to maximise our efficiency and utilisation of the system. 
-                        I have no hesitation in recommending him, his business, and his solutions.</span
-                      >
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-              
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Christo and his team installed a solar system at my home in Cape Town three months ago. I can
+                    unreservably recommend his quality of work and the total dedication he put into delivering
+                    high-quality, safe, reliable solutions for my energy needs. He is a man of unquestionable integrity,
+                    and takes an intense pride in the quality of the work that he provides.
+                    I would go to so far as to say he's a perfectionist - and that's exactly what you need when someone
+                    is working with the power in your home or business.
+                    His team also showed huge commitment to delivering quality service and installing an effective and
+                    reliable system. Christo has been rapid in his follow-up to any queries that I've had, and went the
+                    extra mile in helping us to configure the system, even playing a role after the job was complete in
+                    assisting us to customise the solar settings to maximise our efficiency and utilisation of the
+                    system.
+                    I have no hesitation in recommending him, his business, and his solutions.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+
+              </div>
             </div>
-            </div>
-          </div>
-        
-        </div>
-      </section>
-      <!-- ======= Team Section ======= -->
-      <section id="team" class="team">
-        <div class="container">
-          <div class="section-title">
-            <span>Team</span>
-            <h2>Team</h2>
-            <p>
-              Our diverse and dedicated team brings a wealth of expertise and
-              passion to every project, ensuring excellence in all we do.
-            </p>
           </div>
 
-          <div class="row justify-content-center">
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-            >
-              <div class="member">
-                <img src="assets/img/team/Christo.jpeg" alt="Christo" />
-                <h4>Christo Brand</h4>
-                <span>CEO</span>
-                <p>Our esteemed CEO. With visionary leadership and a wealth of experience, Christo steers our company towards innovation and success. His dedication to our mission drives us to new heights, ensuring excellence in all we do.
-                </p>
-                <!--<div class="social">
+        </div>
+    </section>
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+        <div class="section-title">
+          <span>Team</span>
+          <h2>Team</h2>
+          <p>
+            Our diverse and dedicated team brings a wealth of expertise and
+            passion to every project, ensuring excellence in all we do.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/team/Christo.jpeg" alt="Christo" />
+              <h4>Christo Brand</h4>
+              <span>CEO</span>
+              <p>Our esteemed CEO. With visionary leadership and a wealth of experience, Christo steers our company
+                towards innovation and success. His dedication to our mission drives us to new heights, ensuring
+                excellence in all we do.
+              </p>
+              <!--<div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
               </div>-->
-              </div>
             </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-            >
-              <div class="member">
-                <img src="assets/img/team/Lohma.jpeg" alt="Lohma" />
-                <h4>Lohma Stevens</h4>
-                <span>Administration</span>
-                <p>
-                  Lohma seamlessly manages administrative tasks while excelling in sales support. Her commitment to efficiency and customer satisfaction plays a pivotal role in our operations.
-                </p>
-              </div>
-            </div>
-           
-
-            
           </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/team/Lohma.jpeg" alt="Lohma" />
+              <h4>Lohma Stevens</h4>
+              <span>Administration</span>
+              <p>
+                Lohma seamlessly manages administrative tasks while excelling in sales support. Her commitment to
+                efficiency and customer satisfaction plays a pivotal role in our operations.
+              </p>
+            </div>
+          </div>
+
+
+
         </div>
-      </section>
-      <!--End Team Section -->
+      </div>
+    </section>
+    <!--End Team Section -->
 
-      <!-- ======= Team Section 2 ======= -->
-      <section id="team" class="team">
-        <div class="container">
+    <!-- ======= Team Section 2 ======= -->
+    <section id="team" class="team">
+      <div class="container">
 
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-            >
-              <div class="member">
-                <img src="assets/img/team/Thys.jpg" alt="Thys" />
-                <h4>Thys Fritz</h4>
-                <span>Project Manager</span>
-                <p>
-                  Meet Thys, our accomplished Project Manager. With a proven track record of successful project execution, Thys brings precision and leadership to every endeavor, ensuring our projects are completed on time and to the highest standards.
-                </p>
-              
-              </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/team/Thys.jpg" alt="Thys" />
+              <h4>Thys Fritz</h4>
+              <span>Project Manager</span>
+              <p>
+                Meet Thys, our accomplished Project Manager. With a proven track record of successful project execution,
+                Thys brings precision and leadership to every endeavor, ensuring our projects are completed on time and
+                to the highest standards.
+              </p>
+
             </div>
+          </div>
 
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-            >
-              <div class="member">
-                <img src="assets/img/team/Callum.jpg" alt="Callum" />
-                <h4>Callum </h4>
-                <span>Construction Manager</span>
-                <p>
-                  Experienced in the construction industry, Callum leads our projects with a keen eye for detail, quality, and safety. His expertise ensures that every construction phase is executed with excellence.
-                </p>
-              </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/team/Callum.jpg" alt="Callum" />
+              <h4>Callum </h4>
+              <span>Construction Manager</span>
+              <p>
+                Experienced in the construction industry, Callum leads our projects with a keen eye for detail, quality,
+                and safety. His expertise ensures that every construction phase is executed with excellence.
+              </p>
             </div>
-            <div
-            class="col-lg-4 col-md-6 d-flex align-items-stretch"
-            data-aos="zoom-in"
-          >
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
             <div class="member">
               <img src="assets/img/team/Denver.jpg" alt="Denver" />
               <h4>Denver Solomons</h4>
               <span>Head of Technical</span>
               <p>
-               With a wealth of technical expertise and leadership, Denver oversees our technical teams to ensure the seamless execution of our projects. His dedication to precision and innovation is the driving force behind our technical excellence.
+                With a wealth of technical expertise and leadership, Denver oversees our technical teams to ensure the
+                seamless execution of our projects. His dedication to precision and innovation is the driving force
+                behind our technical excellence.
               </p>
             </div>
           </div>
 
-            
-          </div>
+
         </div>
-      </section>
-      <!--End Team Section -->
+      </div>
+    </section>
+    <!--End Team Section -->
 
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="section-title">
-            <span>Contact</span>
-            <h2>Contact</h2>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
 
-            <p>
-              Feel free to reach out to us with any questions or inquiries.
-              We're here to assist you.
-            </p>
-          </div>
+          <p>
+            Feel free to reach out to us with any questions or inquiries.
+            We're here to assist you.
+          </p>
+        </div>
 
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-6">
-              <div class="info-box mb-4">
-                <i class="bx bx-map"></i>
-                <h3>Our Address</h3>
-                <p>7 Knorhoek Close, Strand, Western Cape</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="info-box  mb-4">
-                <i class="bx bx-envelope"></i>
-                <h3>Email Us</h3>
-                <p>
-                  <a href="mailto:info@electricskysolar.co.za"
-                    >info@electricskysolar.co.za</a
-                  >
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="info-box  mb-4">
-                <i class="bx bx-phone-call"></i>
-                <h3>Call Us</h3>
-                <p><a href="tel:0814110824">081 411 0824</a></p>
-              </div>
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>7 Knorhoek Close, Strand, Western Cape</p>
             </div>
           </div>
 
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-6 ">
-              <iframe
-                class="mb-4 mb-lg-0"
-                src="https://maps.google.com/maps?q=7%20Knorhoek%20Close,%20Strand&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                frameborder="0"
-                style="border:0; width: 100%; height: 384px;"
-                allowfullscreen
-              ></iframe>
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>
+                <a href="mailto:info@electricskysolar.co.za">info@electricskysolar.co.za</a>
+              </p>
             </div>
-            <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit" value="Send">Contact Us</button>
-                </div>
-              </form>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p><a href="tel:0814110824">081 411 0824</a></p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Contact Section -->
-    </main>
-    <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="footer-info">
-                <h3>Electric Sky Solar</h3>
-                <p>
-                  7 Knorhoek Close <br />
-                  Strand, Western Cape<br /><br />
-                  <strong>Phone:</strong
-                  ><a href="tel:0814110824"> 081 411 0824</a><br />
-                  <strong>Email:</strong
-                  ><a href="mailto:info@electricskysolar.co.za">
-                    info@electricskysolar.co.za</a
-                  ><br />
-                </p>
-                <div class="social-links mt-3">
-                  <a
-                    href="https://web.facebook.com/profile.php?id=100090957391377"
-                    target="_blank"
-                    class="facebook"
-                    ><i class="bx bxl-facebook"></i
-                  ></a>
-                  <!--<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0"
+              src="https://maps.google.com/maps?q=7%20Knorhoek%20Close,%20Strand&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6">
+            <form class="contact-form" id="contact-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text"  name="from_name" class="form-control" id="name" placeholder="Your Name" required="">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control"name="user_email" id="email" placeholder="Your Email" required="">
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="tel" class="form-control" name="contact_number" id="contact_number" placeholder="Contact Number" required="">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control"  name="message" rows="5" placeholder="Message" required=""></textarea>
+              </div>
+              <div class="my-3">
+                
+              </div>
+              <div class="text-center">
+                <button class="btns" type="submit_form">Contact Us</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Electric Sky Solar</h3>
+              <p>
+                7 Knorhoek Close <br />
+                Strand, Western Cape<br /><br />
+                <strong>Phone:</strong><a href="tel:0814110824"> 081 411 0824</a><br />
+                <strong>Email:</strong><a href="mailto:info@electricskysolar.co.za">
+                  info@electricskysolar.co.za</a><br />
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://web.facebook.com/profile.php?id=100090957391377" target="_blank" class="facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                <!--<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-google"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
-                </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#about">About us</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#services">Services</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#portfolio">Portfolio</a>
-                </li>
-              </ul>
-            </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#about">About us</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="col-lg-1 col-md-2 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#services">Residential</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#services">Commercial & Industrial</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#services">Consultancy & Advisory</a>
-                </li>
-              </ul>
-            </div>
+          <div class="col-lg-1 col-md-2 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#services">Residential</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#services">Commercial & Industrial</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#services">Consultancy & Advisory</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="col-lg-2 col-md-3 footer-logo">
-              <!--<h4>Logo will go here</h4>-->
-              <img
-                class="img-thumbnail"
-                src="assets/img/ElecCrop.png"
-                alt="logo"
-              />
-              <!--<form action="" method="post">
+          <div class="col-lg-2 col-md-3 footer-logo">
+            <!--<h4>Logo will go here</h4>-->
+            <img class="img-thumbnail" src="assets/img/ElecCrop.png" alt="logo" />
+            <!--<form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>-->
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>ElectricSky Solar</span></strong
-          >. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
-          Designed by
-          <a href="http://ft8.co.za/" target="_blank"
-            >FT8 Web Design & Development</a
-          >
-        </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ElectricSky Solar</span></strong>. All Rights Reserved
       </div>
-    </footer>
-    <!-- End Footer -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
+        Designed by
+        <a href="http://ft8.co.za/" target="_blank">FT8 Web Design & Development</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-    <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
