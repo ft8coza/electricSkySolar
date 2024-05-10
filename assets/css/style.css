@@ -22,6 +22,15 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.grid__categories {
+  display: none !important;
+}
+
+.horizontal-menu--desktop{
+  align-items: center;
+  justify-content: center;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
